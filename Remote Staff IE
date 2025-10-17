@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Website Design & Development Scope – RemoteStaff.ie | Plus Promotions</title>
+<style>
+  :root{
+    --brand:#1B83B7;
+    --ink:#111111;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --bg:#ffffff;
+    --shadow:0 8px 20px rgba(17,17,17,.06);
+  }
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .topbar{background:var(--brand);color:#fff;font-size:14px;padding:.35rem 1rem;text-align:center}
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10;
+  }
+  header img.logo{height:44px;width:auto}
+  header .meta{font-size:14px;color:var(--muted);text-align:right}
+  .hero{
+    padding:48px 24px;background:
+      radial-gradient(1000px 400px at 20% 0%, rgba(27,131,183,.06), transparent 60%),
+      radial-gradient(800px 300px at 80% 0%, rgba(27,131,183,.08), transparent 60%);
+  }
+  .container{max-width:980px;margin:0 auto}
+  .hero h1{margin:0 0 .25rem;font-size:30px;line-height:1.2;color:var(--brand)}
+  .hero p.sub{margin:.25rem 0 1rem;color:var(--muted)}
+  .tagline{
+    padding:14px 16px;border:1px solid var(--line);border-left:4px solid var(--brand);
+    background:#fff;border-radius:10px;box-shadow:var(--shadow);
+  }
+  section{padding:28px 24px;border-top:1px solid var(--line);background:#fff}
+  h2{margin:0 0 .5rem;font-size:22px;line-height:1.35;color:var(--brand)}
+  p{margin:.25rem 0 .75rem}
+  ul{margin:.25rem 0 1rem 1.2rem;padding:0}
+  li{margin:.25rem 0}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow);
+  }
+  .pill{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;background:#fff}
+  .pillwrap{display:flex;gap:10px;flex-wrap:wrap;margin-top:.5rem}
+  table{width:100%;border-collapse:collapse;margin-top:.5rem}
+  th,td{padding:10px 12px;border:1px solid var(--line);text-align:left}
+  th{background:#f3f8fb;color:var(--brand)}
+  footer{
+    border-top:2px solid var(--brand);background:#fff;padding:18px 24px;color:var(--muted);font-size:14px
+  }
+  @media(max-width:760px){
+    .grid-2{grid-template-columns:1fr}
+    header{flex-direction:column;gap:10px}
+    header .meta{text-align:center}
+    .hero h1{font-size:26px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Plus Promotions — Website Design & Development Scope</div>
+
+<header class="container">
+  <img class="logo" src="https://pluspromotions.co.uk/wp-content/uploads/2022/01/ppromotions_logo_final.png" alt="Plus Promotions Logo">
+  <div class="meta">
+    Prepared for: <strong>RemoteStaff.ie</strong><br>
+    Prepared by: Plus Promotions • Date: <span id="today"></span>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <h1>Website Design & Development Scope – RemoteStaff.ie</h1>
+      <p class="sub">Irish-focused website helping local businesses hire skilled South African professionals.</p>
+      <div class="tagline">
+        “Hire remote professionals for your Irish business — quick, compliant-free and cost-effective.”
+        Skilled staff who work Irish hours with performance guarantee and no PAYE/PRSI burden.
+      </div>
+      <div class="pillwrap">
+        <span class="pill">Responsible & Punctual</span>
+        <span class="pill">No PAYE, PRSI or Pension Compliance</span>
+        <span class="pill">Work in Irish Time Zone</span>
+        <span class="pill">Lower Cost for Same Quality</span>
+        <span class="pill">No Employer Contributions</span>
+        <span class="pill">Performance Guarantee</span>
+        <span class="pill">English Language & Communication Match</span>
+        <span class="pill">Easy and Fast Hiring Process</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <section class="container">
+    <h2>Introduction</h2>
+    <p>Plus Promotions will design and develop the RemoteStaff.ie website to clearly communicate your unique selling points and strengthen credibility with Irish business audiences. The following document defines page structure, design principles, core functionalities, and deliverables within the Plus Promotions visual identity.</p>
+  </section>
+
+  <!-- OBJECTIVES + SCOPE -->
+  <section class="container grid-2">
+    <div class="card">
+      <h2>Project Objectives</h2>
+      <ul>
+        <li>Launch a modern, SEO-optimised website for RemoteStaff.ie.</li>
+        <li>Highlight eight key USPs prominently across pages and CTAs.</li>
+        <li>Integrate an interactive <strong>Cost-Saving Calculator</strong> to compare Irish vs. South African staffing costs.</li>
+        <li>Create structured “Hire Talent” landing pages grouped by profession.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Website Scope Overview</h2>
+      <ul>
+        <li>Seven primary pages: Home, Why Choose Us, Hire Talent, How It Works, Pricing (Savings Calculator), About, and Contact.</li>
+        <li>Fifteen profession-specific subpages under Hire Talent.</li>
+        <li>Design theme uses Plus Promotions header/footer, #1B83B7 titles, black body text.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="container">
+    <h2>Why Choose Us</h2>
+    <p>We connect Irish companies with highly skilled, reliable South African professionals — without the HR and compliance costs of local hiring.</p>
+    <ul>
+      <li>Responsible & Punctual</li>
+      <li>No PAYE, PRSI or Pension Compliance</li>
+      <li>Work in Irish Time Zone</li>
+      <li>Lower Cost for Same Quality</li>
+      <li>No Employer Contributions</li>
+      <li>Performance Guarantee</li>
+      <li>English Language & Communication Match</li>
+      <li>Easy and Fast Hiring Process</li>
+    </ul>
+  </section>
+
+  <!-- HIRE TALENT -->
+  <section class="container">
+    <h2>Hire Talent – Structure</h2>
+    <p>Dedicated landing pages for each skillset, logically grouped to improve navigation and SEO.</p>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Roles</th><th>Example URL Path</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Creative & Marketing</td><td>Copywriter, Animator, Marketing Analyst</td><td>/hire-talent/copywriter/ • /hire-talent/animator/ • /hire-talent/marketing-analyst/</td></tr>
+        <tr><td>Finance & Accounting</td><td>Accountant, Bookkeeper, Financial Analyst</td><td>/hire-talent/accountant/ • /hire-talent/bookkeeper/ • /hire-talent/financial-analyst/</td></tr>
+        <tr><td>Operations & Management</td><td>Project Manager, Operations Manager, Business Development Manager</td><td>/hire-talent/project-manager/ • /hire-talent/operations-manager/ • /hire-talent/business-development-manager/</td></tr>
+        <tr><td>Administrative & Sales Support</td><td>Executive Assistant, Admin Assistant, Admin Manager, Virtual Assistant, Sales Support, Sales Representative</td><td>/hire-talent/executive-assistant/ • /hire-talent/admin-assistant/ • /hire-talent/virtual-assistant/</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="container grid-2">
+    <div class="card">
+      <h2>How It Works</h2>
+      <ol>
+        <li><strong>Share Your Requirement</strong> – define skills, schedule, and experience.</li>
+        <li><strong>Shortlisting</strong> – candidates lined up within 48–72 hours.</li>
+        <li><strong>Interview</strong> – conduct preferred interview rounds and shortlist.</li>
+        <li><strong>Hire & Contract</strong> – final selection, contract setup, and onboarding within a week.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>Fast & Simple Hiring</h2>
+      <ul>
+        <li>72-hour shortlist turnaround.</li>
+        <li>Interviews on preferred date/time.</li>
+        <li>One-page digital contract and onboarding support.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING / CALCULATOR -->
+  <section class="container">
+    <h2>Pricing – “See How Much You Save”</h2>
+    <p>Interactive calculator comparing Irish local hire vs. RemoteStaff placement.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="color:var(--brand);margin:.25rem 0">Inputs</h3>
+        <ul>
+          <li>Select Role (prefilled with Irish market salary data).</li>
+          <li>Irish Annual Salary (editable).</li>
+          <li>Employer PRSI % (default 11.05%), Pension % (3–5% from Jan 2026), Overheads €/month (default €350).</li>
+          <li>RemoteStaff Monthly Fee (pre-set by role).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--brand);margin:.25rem 0">Outputs</h3>
+        <ul>
+          <li>Table: Local Hire vs. RemoteStaff total annual cost.</li>
+          <li>Estimated savings (€ + %), bar graph or chart visual.</li>
+          <li>CTA: “Get Shortlist of Candidates”.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN + IMPLEMENTATION -->
+  <section class="container grid-2">
+    <div class="card">
+      <h2>Design Features</h2>
+      <ul>
+        <li>Consistent Plus Promotions branding; #1B83B7 headings, black body text.</li>
+        <li>High-contrast hero banners, USP icons, and CTAs.</li>
+        <li>Mobile-first responsive layout; clean, professional look.</li>
+        <li>Visual connection between Ireland & South Africa.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Implementation Process</h2>
+      <ol>
+        <li>Discovery & Wireframing</li>
+        <li>UI/UX Design</li>
+        <li>Development & CMS Integration</li>
+        <li>Testing (speed, mobile, cross-browser)</li>
+        <li>Client Review & Launch</li>
+        <li>Analytics Configuration (GA4 + conversion tracking)</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DELIVERABLES -->
+  <section class="container">
+    <h2>Deliverables</h2>
+    <ul>
+      <li>One design concept with revision rounds.</li>
+      <li>7 primary pages + 15 subpages.</li>
+      <li>Cost calculator integration.</li>
+      <li>SEO metadata setup & analytics linking.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="container">
+    <h2>Contact Information</h2>
+    <div class="grid-2">
+      <div class="card">
+        <ul>
+          <li><strong>Ireland:</strong> 085 804 1664 • <a href="mailto:info@pluspromotions.ie">info@pluspromotions.ie</a> • <a href="https://pluspromotions.ie" target="_blank">pluspromotions.ie</a></li>
+          <li><strong>UK:</strong> 07467 456553 • <a href="mailto:info@pluspromotions.co.uk">info@pluspromotions.co.uk</a> • <a href="https://pluspromotions.co.uk" target="_blank">pluspromotions.co.uk</a></li>
+          <li><strong>NZ:</strong> <a href="mailto:dylan@pluspromotions.co.nz">dylan@pluspromotions.co.nz</a> • <a href="https://pluspromotions.co.nz" target="_blank">pluspromotions.co.nz</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul>
+          <li><strong>Ireland Office:</strong> Ludgate Hub, Old Bakery, Townshend Street, Skibbereen, Co. Cork, P81 T324</li>
+          <li><strong>UK Office:</strong> 34 Mostyn Avenue, Wembley, England, HA9 8AX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Plus Promotions • Ireland • UK • NZ
+  </div>
+</footer>
+
+<script>
+  const d=new Date();
+  document.getElementById('today').textContent=d.toLocaleDateString();
+  document.getElementById('year').textContent=d.getFullYear();
+</script>
+
+</body>
+</html>
