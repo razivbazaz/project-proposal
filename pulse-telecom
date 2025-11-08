@@ -1,0 +1,284 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulse.ie — Website Redevelopment & SEO Proposal (Nov 2025)</title>
+  <meta name="description" content="Proposal to rebuild Pulse.ie with SEO-first structure and integrated eCommerce shop for telecom hardware and services." />
+  <style>
+    /* =============================
+       Blaster Motions–styled theme
+       (clean, modern, bold accent)
+       ============================= */
+    :root {
+      --brand-bg: #0b1220;         /* deep navy */
+      --surface: #0f172a;          /* slate-900 */
+      --muted: #1f2937;            /* gray-800 */
+      --text: #e5e7eb;             /* gray-200 */
+      --subtext: #9ca3af;          /* gray-400 */
+      --accent: #22d3ee;           /* cyan-400 */
+      --accent-2: #a78bfa;         /* violet-400 */
+      --ok: #34d399;               /* emerald */
+      --warn: #f59e0b;             /* amber */
+      --danger: #fb7185;           /* rose */
+      --card: #0b132a;             /* slightly different depth */
+      --border: rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --radius-lg: 22px;
+      --maxw: 1080px;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(34,211,238,.12), transparent 60%),
+                  radial-gradient(800px 500px at -10% 20%, rgba(167,139,250,.10), transparent 60%),
+                  var(--brand-bg);
+      color: var(--text);
+      font: 400 16px/1.6 "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      letter-spacing: .1px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }/* Header */
+header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom, rgba(11,18,32,.85), rgba(11,18,32,.55));
+  border-bottom: 1px solid var(--border);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+.brand .logo {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 6px 18px rgba(34,211,238,.25);
+}
+.brand .title { font-size: 18px; letter-spacing: .3px; }
+.menu { display: flex; gap: 18px; }
+.menu a { color: var(--subtext); font-weight: 600; }
+.cta { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 999px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b1020; font-weight: 700; box-shadow: 0 8px 26px rgba(34,211,238,.25); }
+
+/* Hero */
+.hero { padding: 56px 0 24px; }
+.badge { display:inline-flex; align-items:center; gap:10px; padding:6px 10px; border:1px solid var(--border); border-radius: 999px; color: var(--subtext); font-size: 13px; }
+.hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin: 16px 0 10px; }
+.hero p { color: var(--subtext); max-width: 820px; }
+.hero-cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin: 28px 0 8px; }
+.card { grid-column: span 12; background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; box-shadow: var(--shadow); }
+@media (min-width: 820px) { .card { grid-column: span 6; } }
+.card h3 { margin: 6px 0 6px; font-size: 18px; }
+.pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: rgba(34,211,238,.12); color: var(--accent); font-weight:700; font-size:12px; border:1px solid rgba(34,211,238,.25) }
+
+/* Sections */
+section { padding: 28px 0; }
+section h2 { font-size: 22px; margin: 0 0 12px; }
+.muted { color: var(--subtext); }
+.grid { display: grid; gap: 16px; }
+@media (min-width: 860px){ .grid.cols-2{ grid-template-columns: 1fr 1fr; } }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--border); }
+.table th, .table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+.table th { background: rgba(255,255,255,.03); color: var(--subtext); font-weight: 600; }
+.table tr:last-child td { border-bottom: 0; }
+
+/* Callouts */
+.callout { background: linear-gradient(180deg, rgba(167,139,250,.12), rgba(167,139,250,.04)); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; }
+
+/* Footer */
+footer { margin: 36px 0 48px; color: var(--subtext); font-size: 14px; }
+
+/* Print-friendly tweaks */
+@media print {
+  header, .cta { display:none !important; }
+  body { background: #fff; color: #111; }
+  .card, .callout { box-shadow: none; border-color: #ddd; }
+  a { color: #0a66c2; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">Pulse.ie — Redevelopment & SEO Proposal</div>
+      </div>
+      <nav class="menu" aria-label="Main">
+        <a href="#intro">Intro</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#competitors">Competitors</a>
+        <a href="#structure">Site Structure</a>
+        <a href="#keywords">Keywords</a>
+        <a class="cta" href="#contact">Get a Quote</a>
+      </nav>
+    </div>
+  </header>  <main>
+    <!-- HERO -->
+    <section class="hero wrap" id="intro">
+      <span class="badge">Prepared by <strong>Plus Promotions</strong> · Nov 2025</span>
+      <h1>Pulse Voice & Data — Website Redevelopment & SEO Strategy</h1>
+      <p>
+        Rebuild Pulse.ie with an SEO‑first structure and an integrated <strong>Shop</strong> for telecom hardware. Position Pulse as Ireland’s
+        one‑stop provider for <em>business phone systems</em>, <em>Hosted PBX</em>, <em>VoIP for SMEs</em>, and <em>unified communications</em> while enabling direct product sales.
+      </p>
+      <div class="hero-cards">
+        <div class="card">
+          <span class="pill">Why now</span>
+          <h3>Modern UX + measurable SEO growth</h3>
+          <p class="muted">Elevate brand perception, increase organic traffic, and convert visitors with clear pricing, comparison blocks, and fast checkout.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Key outcome</span>
+          <h3>Service-to-Product ecosystem</h3>
+          <p class="muted">Every service page connects to compatible hardware (IP phones, PBX units, headsets), creating a seamless discovery → purchase journey.</p>
+        </div>
+      </div>
+    </section><!-- OBJECTIVES -->
+<section class="wrap" id="objectives">
+  <h2>1) Objectives</h2>
+  <div class="grid cols-2">
+    <div class="callout">
+      <h3 style="margin:0 0 8px">Positioning</h3>
+      <p class="muted">Establish Pulse.ie as a top‑of‑search B2B telecom brand in Ireland with authoritative service pages and category‑led product listings.</p>
+    </div>
+    <div class="callout">
+      <h3 style="margin:0 0 8px">Lead & Revenue</h3>
+      <p class="muted">Generate qualified leads for hosted telephony and drive direct revenue via a streamlined eCommerce layer for telecom hardware.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETITOR BENCHMARK -->
+<section class="wrap" id="competitors">
+  <h2>2) Competitor Benchmark</h2>
+  <table class="table" role="table" aria-label="Competitor benchmark table">
+    <thead>
+      <tr><th>Competitor</th><th>Primary Strength</th><th>Opportunity for Pulse</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>VoIPLine Telecom</strong></td>
+        <td>Low‑cost VoIP, transparent online pricing</td>
+        <td>Pair competitive pricing with broader hardware catalogue</td>
+      </tr>
+      <tr>
+        <td><strong>NUACOM</strong></td>
+        <td>Integrated UC suite & analytics</td>
+        <td>Simplify messaging and spotlight SME bundles</td>
+      </tr>
+      <tr>
+        <td><strong>Conversation Piece</strong></td>
+        <td>Longstanding local presence</td>
+        <td>Outperform on UX speed and modern design</td>
+      </tr>
+      <tr>
+        <td><strong>IP Telecom</strong></td>
+        <td>Unlimited call plans and fixed pricing</td>
+        <td>Win with service+hardware bundles and fast delivery</td>
+      </tr>
+      <tr>
+        <td><strong>GoldStar Telecom</strong></td>
+        <td>Hybrid PBX/cloud solutions</td>
+        <td>Offer a wider, brand‑agnostic product mix</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SITE STRUCTURE & SHOP -->
+<section class="wrap" id="structure">
+  <h2>3) Site Structure & UX Framework</h2>
+  <div class="grid cols-2">
+    <div>
+      <h3>Main Navigation</h3>
+      <ul>
+        <li><strong>Home</strong> — Hero value prop, featured services, featured products</li>
+        <li><strong>Services</strong>
+          <ul>
+            <li>Business Phone Systems</li>
+            <li>Hosted PBX / Cloud PBX</li>
+            <li>VoIP for SMEs</li>
+            <li>Unified Communications & Contact Centre</li>
+          </ul>
+        </li>
+        <li><strong>Shop</strong>
+          <ul>
+            <li>Business Phone Systems</li>
+            <li>PBX Hardware</li>
+            <li>IP Phones & Handsets</li>
+            <li>Headsets & Accessories</li>
+            <li>Network Equipment (Routers, Switches)</li>
+            <li>Licences & Software Add‑ons</li>
+          </ul>
+        </li>
+        <li><strong>Solutions</strong> — Multi‑site & Remote Teams, Enterprise Integration, Cost‑Saving Audits</li>
+        <li><strong>About Pulse</strong> — Company, Partners, Case Studies</li>
+        <li><strong>Resources / Blog</strong></li>
+        <li><strong>Contact / Get a Quote</strong></li>
+      </ul>
+    </div>
+    <div>
+      <h3>UX Highlights</h3>
+      <ul>
+        <li>Dual funnel on Home: <em>“Get a Quote”</em> and <em>“Shop Hardware”</em></li>
+        <li>Product cards with badges (SIP‑ready, Teams‑compatible, PoE, Warranty)</li>
+        <li>Comparison tables & downloadable spec sheets</li>
+        <li>Cross‑links: Service → Compatible Products → Add to Cart</li>
+        <li>Schema markup for <code>Service</code> and <code>Product</code> entities</li>
+        <li>Fast, accessible, mobile‑first layouts (Core Web Vitals ready)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- KEYWORD STRATEGY -->
+<section class="wrap" id="keywords">
+  <h2>4) Keyword Strategy</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>Primary (Service)</h3>
+      <ul>
+        <li>business phone system Ireland</li>
+        <li>hosted PBX Ireland</li>
+        <li>VoIP phone system for business</li>
+        <li>cloud telephony solutions Ireland</li>
+        <li>unified communications Ireland</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Transactional (Shop)</h3>
+      <ul>
+        <li>buy business phone system Ireland</li>
+        <li>PBX hardware Ireland</li>
+        <li>VoIP phones Ireland</li>
+        <li>IP handsets for business</li>
+        <li>office headsets Ireland</li>
+        <li>business telecom equipment Ireland</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:16px">
+    <strong>Meta & Content Notes:</strong>
+    Use clear, practical titles (e.g., “PBX Systems for Irish Businesses | Buy Online”) and ensure every category and product page carries structured data, internal links to related services, and a short FAQ.
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section class="wrap" id="contact">
+  <h2>5) Next Step</h2>
+  <p class="muted">If you’re happy with the direction, we’ll proceed to wireframes and copy outlines for: Home, one core Service page, the Shop landing, and a Product detail template.</p>
+  <p>
+    <a class="cta" href="#">Approve & Start Wireframes</a>
+  </p>
+</section>
+
+  </main>  <footer class="wrap">
+    <p>© 2025 Plus Promotions Ltd · Proposal for Pulse Voice & Data Ltd. Theme aligned to Blaster Motions style (deep navy, bright cyan/violet accents, bold cards).
+    </p>
+  </footer>
+</body>
+</html>
