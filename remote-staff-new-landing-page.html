@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RemoteSA — Landing</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind tweaks -->
+  <style>
+    /* Hide scrollbar for benefits banner (like scrollbar-hide) */
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Smooth anchor scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-white text-slate-900">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-red-600 rounded-xl flex items-center justify-center">
+            <span class="text-white font-bold text-lg">R</span>
+          </div>
+          <span class="text-xl font-bold text-slate-900">RemoteSA</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a class="flex items-center gap-1 font-medium text-slate-700 hover:text-slate-900 transition-colors" href="#how">How It Works</a>
+          <a class="flex items-center gap-1 font-medium text-slate-700 hover:text-slate-900 transition-colors" href="#pool">
+            Talent Pool
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="flex items-center gap-1 font-medium text-slate-700 hover:text-slate-900 transition-colors" href="#pricing">Pricing</a>
+          <a class="flex items-center gap-1 font-medium text-slate-700 hover:text-slate-900 transition-colors" href="#about">About</a>
+        </div>
+
+        <!-- Desktop CTAs -->
+        <div class="hidden lg:flex items-center gap-4">
+          <button class="text-slate-700 hover:text-slate-900 font-medium px-3 py-2 rounded-lg">Sign In</button>
+          <button class="bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 py-2.5 font-semibold transition-colors">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobileBtn" class="lg:hidden p-2" aria-label="Open menu">
+          <svg id="iconMenu" class="w-6 h-6 text-slate-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg id="iconClose" class="w-6 h-6 text-slate-900 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 6l12 12M18 6l-12 12" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-x-0 top-20 z-40 bg-white border-b shadow-lg lg:hidden hidden">
+    <div class="container mx-auto px-6 py-6">
+      <div class="flex flex-col gap-4">
+        <a class="text-slate-700 font-medium py-2 hover:text-red-600 transition-colors" href="#how">How It Works</a>
+        <a class="text-slate-700 font-medium py-2 hover:text-red-600 transition-colors" href="#pool">Talent Pool</a>
+        <a class="text-slate-700 font-medium py-2 hover:text-red-600 transition-colors" href="#pricing">Pricing</a>
+        <a class="text-slate-700 font-medium py-2 hover:text-red-600 transition-colors" href="#about">About</a>
+        <hr class="my-2" />
+        <button class="justify-start text-left px-0 py-2 text-slate-700 font-medium hover:text-red-600 transition-colors">Sign In</button>
+        <button class="bg-red-600 hover:bg-red-700 text-white rounded-xl py-2.5 font-semibold transition-colors">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer for fixed navbar -->
+  <div class="h-20"></div>
+
+  <!-- HERO -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-red-50/30">
+    <!-- Background blobs -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-red-100/40 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 -left-20 w-72 h-72 bg-slate-100 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-red-50 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left -->
+        <div>
+          <div class="inline-flex items-center gap-2 bg-red-50 border border-red-100 rounded-full px-4 py-1.5 mb-6">
+            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+            <span class="text-sm font-medium text-red-700">Ireland ↔ South Africa Recruitment</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] mb-6">
+            Exceptional Remote Talent,
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500"> Zero Compliance </span>
+            Headaches
+          </h1>
+
+          <p class="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl">
+            Hire skilled South African professionals who work your Irish hours.
+            Quick placement, no employer contributions, and a performance guarantee —
+            <span class="font-semibold text-slate-800"> no fees until hired</span>.
+          </p>
+
+          <!-- Highlights -->
+          <div class="flex flex-wrap gap-4 mb-10">
+            <div class="flex items-center gap-2 text-slate-700">
+              <svg class="w-5 h-5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              </svg>
+              <span class="font-medium">No PAYE/PRSI Burden</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-700">
+              <svg class="w-5 h-5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              </svg>
+              <span class="font-medium">Irish Business Hours</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-700">
+              <svg class="w-5 h-5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              </svg>
+              <span class="font-medium">Performance Guarantee</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#pool" class="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg shadow-red-200 hover:shadow-xl hover:shadow-red-200 transition-all font-semibold">
+              Browse Candidates
+              <svg class="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#how" class="inline-flex items-center justify-center px-8 py-4 text-lg rounded-xl border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all font-semibold text-slate-900">
+              How It Works
+            </a>
+          </div>
+        </div>
+
+        <!-- Right visual (hidden on mobile, like your code) -->
+        <div class="relative hidden lg:block">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl transform rotate-3 scale-105 opacity-10"></div>
+            <div class="relative bg-white rounded-3xl shadow-2xl shadow-slate-200/50 p-6 border border-slate-100">
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop"
+                alt="Remote professionals collaborating"
+                class="w-full h-72 object-cover rounded-2xl"
+              />
+              <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="bg-slate-50 rounded-xl p-4 text-center">
+                  <div class="text-2xl font-bold text-slate-900">500+</div>
+                  <div class="text-xs text-slate-500">Vetted Candidates</div>
+                </div>
+                <div class="bg-red-50 rounded-xl p-4 text-center">
+                  <div class="text-2xl font-bold text-red-600">48hrs</div>
+                  <div class="text-xs text-slate-500">Avg. Match Time</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-4 text-center">
+                  <div class="text-2xl font-bold text-slate-900">40%</div>
+                  <div class="text-xs text-slate-500">Cost Savings</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="absolute -left-8 top-1/4 bg-white rounded-2xl shadow-xl p-4 border border-slate-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">Performance</div>
+                  <div class="text-xs text-slate-500">Guaranteed</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS BANNER -->
+  <section class="bg-slate-900 py-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10"></div>
+    <div class="container mx-auto px-6">
+      <div class="flex overflow-x-auto scrollbar-hide gap-8 lg:gap-0 lg:grid lg:grid-cols-6">
+        <!-- item -->
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">⏱</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">Irish Time Zone</div>
+            <div class="text-xs text-slate-400">9-5 your time</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">🛡</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">No PAYE/PRSI</div>
+            <div class="text-xs text-slate-400">Zero compliance</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">%</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">40% Savings</div>
+            <div class="text-xs text-slate-400">Same quality</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">💬</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">Fluent English</div>
+            <div class="text-xs text-slate-400">Clear comms</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">⚡</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">Fast Hiring</div>
+            <div class="text-xs text-slate-400">48hr matching</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 min-w-max lg:min-w-0 lg:justify-center px-4 lg:px-2">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-400 font-bold">🧾</span>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-white whitespace-nowrap">No Upfront Fees</div>
+            <div class="text-xs text-slate-400">Pay when hired</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="py-24 bg-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-red-600 font-semibold text-sm uppercase tracking-wider">Simple Process</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">How We Help You Hire</h2>
+        <p class="text-lg text-slate-600">From your requirements to a working team member — we handle everything in between.</p>
+      </div>
+
+      <div class="relative">
+        <div class="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-slate-200 via-red-200 to-slate-200"></div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+          <!-- Step -->
+          <div class="relative">
+            <div class="bg-white rounded-2xl p-6 border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all duration-300 h-full">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center">
+                  <span class="text-red-600 text-xl font-bold">📄</span>
+                </div>
+                <span class="text-4xl font-bold text-slate-100">01</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">We Send CVs</h3>
+              <p class="text-slate-600 leading-relaxed">Share your requirements and we'll send you curated CVs of pre-vetted South African professionals within 48 hours.</p>
+            </div>
+            <div class="hidden lg:flex absolute top-24 -right-3 w-6 h-6 bg-white rounded-full border border-slate-200 items-center justify-center z-10">
+              <svg class="w-3 h-3 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="bg-white rounded-2xl p-6 border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all duration-300 h-full">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center">
+                  <span class="text-red-600 text-xl font-bold">👥</span>
+                </div>
+                <span class="text-4xl font-bold text-slate-100">02</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">You Shortlist</h3>
+              <p class="text-slate-600 leading-relaxed">Review the candidates at your pace. Shortlist the ones that match your team culture and skill requirements.</p>
+            </div>
+            <div class="hidden lg:flex absolute top-24 -right-3 w-6 h-6 bg-white rounded-full border border-slate-200 items-center justify-center z-10">
+              <svg class="w-3 h-3 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="bg-white rounded-2xl p-6 border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all duration-300 h-full">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center">
+                  <span class="text-red-600 text-xl font-bold">🎥</span>
+                </div>
+                <span class="text-4xl font-bold text-slate-100">03</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Interview Rounds</h3>
+              <p class="text-slate-600 leading-relaxed">Conduct your interview rounds — we handle all scheduling and coordination across time zones.</p>
+            </div>
+            <div class="hidden lg:flex absolute top-24 -right-3 w-6 h-6 bg-white rounded-full border border-slate-200 items-center justify-center z-10">
+              <svg class="w-3 h-3 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="bg-white rounded-2xl p-6 border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50 transition-all duration-300 h-full">
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center">
+                  <span class="text-red-600 text-xl font-bold">🤝</span>
+                </div>
+                <span class="text-4xl font-bold text-slate-100">04</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Contract & Start</h3>
+              <p class="text-slate-600 leading-relaxed">Once selected, we manage the contract. You pay monthly — no upfront fees, no employer burden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-slate-500 mb-2">Ready to find your next team member?</p>
+        <a href="#pool" class="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors">
+          Start Your Search
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALENT CATEGORIES -->
+  <section id="pool" class="py-24 bg-gradient-to-b from-slate-50 to-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-red-600 font-semibold text-sm uppercase tracking-wider">Talent Pool</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">Remote Professionals Across Key Sectors</h2>
+        <p class="text-lg text-slate-600">Pre-vetted talent ready to integrate with your Irish business, available across multiple disciplines.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Category card -->
+        <div class="group relative bg-white rounded-2xl p-6 lg:p-8 border border-slate-100 hover:border-transparent hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 cursor-pointer overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center">
+                <span class="text-purple-600 font-bold text-xl">🎨</span>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-slate-900">85+</div>
+                <div class="text-xs text-slate-500">Available</div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors">Creative & Marketing</h3>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Copywriter</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Animator</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Marketing Analyst</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Graphic Designer</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Social Media Manager</span>
+            </div>
+
+            <div class="flex items-center text-red-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+              View Candidates
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl p-6 lg:p-8 border border-slate-100 hover:border-transparent hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 cursor-pointer overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500 to-teal-500 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center">
+                <span class="text-emerald-600 font-bold text-xl">🧮</span>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-slate-900">120+</div>
+                <div class="text-xs text-slate-500">Available</div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors">Finance & Accounting</h3>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Accountant</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Bookkeeper</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Financial Analyst</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Payroll Specialist</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Tax Consultant</span>
+            </div>
+
+            <div class="flex items-center text-red-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+              View Candidates
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl p-6 lg:p-8 border border-slate-100 hover:border-transparent hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 cursor-pointer overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center">
+                <span class="text-blue-600 font-bold text-xl">💼</span>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-slate-900">65+</div>
+                <div class="text-xs text-slate-500">Available</div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors">Operations & Management</h3>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Project Manager</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Operations Manager</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Business Development</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Team Lead</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Scrum Master</span>
+            </div>
+
+            <div class="flex items-center text-red-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+              View Candidates
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-white rounded-2xl p-6 lg:p-8 border border-slate-100 hover:border-transparent hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 cursor-pointer overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center">
+                <span class="text-orange-600 font-bold text-xl">🎧</span>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-bold text-slate-900">150+</div>
+                <div class="text-xs text-slate-500">Available</div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors">Admin & Sales Support</h3>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Executive Assistant</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Virtual Assistant</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Sales Representative</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Admin Manager</span>
+              <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-sm rounded-lg group-hover:bg-slate-100 transition-colors">Customer Support</span>
+            </div>
+
+            <div class="flex items-center text-red-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+              View Candidates
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="rounded-xl border-2 px-8 py-3 font-semibold text-slate-900 hover:bg-slate-50 transition-colors">
+          Explore All Categories
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CANDIDATES -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <span class="text-red-600 font-semibold text-sm uppercase tracking-wider">Featured Talent</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-2">Meet Our Available Professionals</h2>
+          <p class="text-lg text-slate-600 max-w-xl">Pre-vetted candidates ready to join your team and work Irish business hours.</p>
+        </div>
+        <button class="rounded-xl border-2 px-5 py-2.5 font-semibold text-slate-900 hover:bg-slate-50 transition-colors self-start md:self-auto">
+          View All Candidates →
+        </button>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Candidate Card (repeat pattern) -->
+        <div class="group bg-white rounded-2xl border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50/50 transition-all duration-300 overflow-hidden">
+          <div class="p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" class="w-16 h-16 rounded-xl object-cover" alt="Thabo M." />
+                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <h3 class="font-bold text-slate-900 truncate">Thabo M.</h3>
+                  <span class="text-blue-500 text-sm">✔</span>
+                </div>
+                <p class="text-red-600 font-medium text-sm">Senior Accountant</p>
+                <div class="flex items-center gap-3 mt-1 text-xs text-slate-500">
+                  <span class="flex items-center gap-1">📍 Cape Town</span>
+                  <span class="flex items-center gap-1">⏱ 8 years</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★</span>
+              <span class="font-semibold text-slate-900 text-sm">4.9</span>
+              <span class="text-slate-400 text-sm">rating</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Financial Reporting</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">IFRS</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Tax Compliance</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">QuickBooks</span>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50/50 border-t border-slate-100">
+            <button class="w-full bg-slate-900 hover:bg-slate-800 rounded-xl py-2.5 text-white font-semibold transition-colors">
+              Request Profile
+            </button>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-2xl border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50/50 transition-all duration-300 overflow-hidden">
+          <div class="p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=face" class="w-16 h-16 rounded-xl object-cover" alt="Naledi K." />
+                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <h3 class="font-bold text-slate-900 truncate">Naledi K.</h3>
+                  <span class="text-blue-500 text-sm">✔</span>
+                </div>
+                <p class="text-red-600 font-medium text-sm">Executive Assistant</p>
+                <div class="flex items-center gap-3 mt-1 text-xs text-slate-500">
+                  <span class="flex items-center gap-1">📍 Johannesburg</span>
+                  <span class="flex items-center gap-1">⏱ 5 years</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★</span>
+              <span class="font-semibold text-slate-900 text-sm">5.0</span>
+              <span class="text-slate-400 text-sm">rating</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Calendar Management</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Travel Coordination</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">C-Suite Support</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Project Admin</span>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50/50 border-t border-slate-100">
+            <button class="w-full bg-slate-900 hover:bg-slate-800 rounded-xl py-2.5 text-white font-semibold transition-colors">
+              Request Profile
+            </button>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-2xl border border-slate-100 hover:border-red-100 hover:shadow-xl hover:shadow-red-50/50 transition-all duration-300 overflow-hidden">
+          <div class="p-6">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face" class="w-16 h-16 rounded-xl object-cover" alt="Sipho D." />
+                <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <h3 class="font-bold text-slate-900 truncate">Sipho D.</h3>
+                  <span class="text-blue-500 text-sm">✔</span>
+                </div>
+                <p class="text-red-600 font-medium text-sm">Marketing Analyst</p>
+                <div class="flex items-center gap-3 mt-1 text-xs text-slate-500">
+                  <span class="flex items-center gap-1">📍 Durban</span>
+                  <span class="flex items-center gap-1">⏱ 6 years</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★</span>
+              <span class="font-semibold text-slate-900 text-sm">4.8</span>
+              <span class="text-slate-400 text-sm">rating</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Google Analytics</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">SEO/SEM</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Data Visualization</span>
+              <span class="bg-slate-50 text-slate-600 text-xs px-2.5 py-1 rounded-lg">Campaign ROI</span>
+            </div>
+          </div>
+          <div class="px-6 py-4 bg-slate-50/50 border-t border-slate-100">
+            <button class="w-full bg-slate-900 hover:bg-slate-800 rounded-xl py-2.5 text-white font-semibold transition-colors">
+              Request Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="about" class="py-24 bg-slate-900 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-red-400 font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
+          Built for Irish Businesses, Powered by South African Talent
+        </h2>
+        <p class="text-lg text-slate-400">
+          We've eliminated every friction point of international hiring so you can focus on what matters — your business.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- benefit -->
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">🛡</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">No PAYE, PRSI or Pension</h3>
+          <p class="text-slate-400 leading-relaxed">We handle all compliance. Your remote staff aren't on your Irish payroll — zero employer contributions or paperwork.</p>
+        </div>
+
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">⏱</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Work Irish Business Hours</h3>
+          <p class="text-slate-400 leading-relaxed">South Africa shares your timezone. Your team works 9-5 Irish time, attending meetings and collaborating in real-time.</p>
+        </div>
+
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">%</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">40% Lower Costs</h3>
+          <p class="text-slate-400 leading-relaxed">Same quality talent at significantly reduced rates. Reinvest your savings into growing your business.</p>
+        </div>
+
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">👥</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Pre-Vetted Professionals</h3>
+          <p class="text-slate-400 leading-relaxed">Every candidate passes our screening: skills tests, English proficiency, and cultural fit assessment.</p>
+        </div>
+
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">✅</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Performance Guarantee</h3>
+          <p class="text-slate-400 leading-relaxed">Not satisfied? We'll find a replacement at no extra cost. Your success is our commitment.</p>
+        </div>
+
+        <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-red-500/30 hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <span class="text-white font-bold">🏆</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">No Fees Until Hired</h3>
+          <p class="text-slate-400 leading-relaxed">Browse candidates, interview freely — you pay only when you hire.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-16 border-t border-white/10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-bold text-white mb-2">200+</div>
+            <div class="text-slate-400">Successful Placements</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-white mb-2">98%</div>
+            <div class="text-slate-400">Client Retention</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-white mb-2">48hrs</div>
+            <div class="text-slate-400">Average Match Time</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-white mb-2">4.9/5</div>
+            <div class="text-slate-400">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAVINGS CALCULATOR -->
+  <section id="pricing" class="py-24 bg-gradient-to-b from-white to-slate-50">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left -->
+        <div>
+          <span class="text-red-600 font-semibold text-sm uppercase tracking-wider">Cost Calculator</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">See How Much You Could Save</h2>
+          <p class="text-lg text-slate-600 mb-8">
+            Compare the true cost of hiring locally in Ireland versus our remote South African professionals.
+            Same skills, same hours — significantly lower costs.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span class="text-red-600 font-bold">€</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-900">No Hidden Costs</h4>
+                <p class="text-slate-600 text-sm">Single monthly fee covers everything — no PAYE, PRSI, pension, or benefits admin.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span class="text-red-600 font-bold">📉</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-900">Reinvest Your Savings</h4>
+                <p class="text-slate-600 text-sm">Use the cost difference to grow your team faster or invest in other business areas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right calculator -->
+        <div class="bg-white rounded-3xl shadow-2xl shadow-slate-200/50 p-8 border border-slate-100">
+          <div class="flex items-center gap-3 mb-8">
+            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+              <span class="text-red-600 font-bold">🧮</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900">Savings Calculator</h3>
+              <p class="text-sm text-slate-500">Adjust the salary to see your savings</p>
+            </div>
+          </div>
+
+          <!-- Slider -->
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm text-slate-600">Equivalent Irish Salary</span>
+              <span id="salaryLabel" class="text-2xl font-bold text-slate-900">€45,000</span>
+            </div>
+
+            <input
+              id="salary"
+              type="range"
+              min="25000"
+              max="100000"
+              step="5000"
+              value="45000"
+              class="w-full accent-red-600"
+            />
+
+            <div class="flex justify-between text-xs text-slate-400 mt-2">
+              <span>€25,000</span>
+              <span>€100,000</span>
+            </div>
+          </div>
+
+          <!-- Cost comparison -->
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+              <div>
+                <div class="text-sm text-slate-500">Irish Hire (Total Cost)</div>
+                <div class="text-xs text-slate-400">Salary + PRSI + Benefits</div>
+              </div>
+              <div id="irishCost" class="text-xl font-bold text-slate-400 line-through">€51,750</div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 bg-green-50 rounded-xl border-2 border-green-200">
+              <div>
+                <div class="text-sm text-green-700 font-medium">Remote SA Professional</div>
+                <div class="text-xs text-green-600">All-inclusive monthly</div>
+              </div>
+              <div id="remoteCost" class="text-xl font-bold text-green-700">€27,000</div>
+            </div>
+          </div>
+
+          <!-- Savings -->
+          <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 text-white">
+            <div class="text-sm text-red-100 mb-1">Your Annual Savings</div>
+            <div class="flex items-baseline gap-2">
+              <span id="savings" class="text-4xl font-bold">€24,750</span>
+              <span class="text-red-200">/ year</span>
+            </div>
+            <div class="mt-2 text-red-100">
+              That's <span id="percent" class="font-bold text-white">48%</span> saved on this role alone
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-white relative overflow-hidden">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
+        <div class="absolute inset-0">
+          <div class="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+          <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-3xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 rounded-full px-4 py-1.5 mb-6">
+            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+            <span class="text-sm font-medium text-red-300">No Fees Until You Hire</span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            Ready to Build Your
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-500"> Remote Dream Team?</span>
+          </h2>
+
+          <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+            Get started today. Tell us what you need, and we'll send you matched candidate profiles within 48 hours.
+            Interview freely — you only pay when you hire.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <button class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg shadow-red-900/30 hover:shadow-xl transition-all font-semibold">
+              Get Matched Candidates →
+            </button>
+            <button class="px-8 py-4 text-lg rounded-xl border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all font-semibold">
+              Schedule a Call
+            </button>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-slate-400">
+            <a href="tel:+353123456789" class="flex items-center gap-2 hover:text-white transition-colors">
+              <span>📞</span><span>+353 1 234 5678</span>
+            </a>
+            <div class="hidden sm:block w-1 h-1 bg-slate-600 rounded-full"></div>
+            <a href="mailto:hello@remotesa.ie" class="flex items-center gap-2 hover:text-white transition-colors">
+              <span>✉</span><span>hello@remotesa.ie</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="py-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div class="col-span-2 md:col-span-4 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-red-600 rounded-xl flex items-center justify-center">
+              <span class="text-white font-bold text-lg">R</span>
+            </div>
+            <span class="text-xl font-bold">RemoteSA</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-6 max-w-xs">
+            Connecting Irish businesses with exceptional South African talent. Quick, compliant-free, and cost-effective.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">in</a>
+            <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">𝕏</a>
+            <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">@</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Creative & Marketing</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Finance & Accounting</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Operations & Management</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Admin & Sales Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#how" class="text-slate-400 text-sm hover:text-white transition-colors">How It Works</a></li>
+            <li><a href="#pricing" class="text-slate-400 text-sm hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Resources</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Success Stories</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Legal</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-white transition-colors">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>© <span id="year"></span> RemoteSA. All rights reserved.</p>
+        <p>Connecting Ireland 🇮🇪 with South Africa 🇿🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll blur like your React navbar
+    const navbar = document.getElementById('navbar');
+    function onScroll() {
+      if (window.scrollY > 20) {
+        navbar.classList.add('bg-white/95','backdrop-blur-md','shadow-sm');
+        navbar.classList.remove('bg-transparent');
+      } else {
+        navbar.classList.remove('bg-white/95','backdrop-blur-md','shadow-sm');
+        navbar.classList.add('bg-transparent');
+      }
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const iconMenu = document.getElementById('iconMenu');
+    const iconClose = document.getElementById('iconClose');
+
+    function setMobile(open) {
+      mobileMenu.classList.toggle('hidden', !open);
+      iconMenu.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+    }
+
+    let open = false;
+    mobileBtn.addEventListener('click', () => {
+      open = !open;
+      setMobile(open);
+    });
+
+    // Close menu on link click
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => { open = false; setMobile(false); });
+    });
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Savings calculator (same math as your React)
+    const salaryInput = document.getElementById('salary');
+    const salaryLabel = document.getElementById('salaryLabel');
+    const irishCostEl = document.getElementById('irishCost');
+    const remoteCostEl = document.getElementById('remoteCost');
+    const savingsEl = document.getElementById('savings');
+    const percentEl = document.getElementById('percent');
+
+    function euro(n) {
+      return '€' + Math.round(n).toLocaleString();
+    }
+
+    function updateCalc() {
+      const salary = Number(salaryInput.value);
+      const irishCost = salary * 1.15;
+      const remoteCost = salary * 0.6;
+      const annualSavings = irishCost - remoteCost;
+      const percentSaved = Math.round((annualSavings / irishCost) * 100);
+
+      salaryLabel.textContent = euro(salary);
+      irishCostEl.textContent = euro(irishCost);
+      remoteCostEl.textContent = euro(remoteCost);
+      savingsEl.textContent = euro(annualSavings);
+      percentEl.textContent = percentSaved + '%';
+    }
+
+    salaryInput.addEventListener('input', updateCalc);
+    updateCalc();
+  </script>
+</body>
+</html>
